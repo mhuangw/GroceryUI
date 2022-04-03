@@ -7,11 +7,13 @@ import { MdOutlineInventory2, MdOutlineAttachMoney } from "react-icons/md";
 import { IoIosAirplane } from "react-icons/io";
 import { GiDeliveryDrone } from "react-icons/gi";
 import { BsFillPersonFill } from "react-icons/bs";
+import { MdOutlineLocalGroceryStore } from "react-icons/md";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <MdOutlineLocalGroceryStore size={100} />
         <p>Welcome to the Grocery Express Delivery Service!</p>
         <p>Select a category to get started: </p>
 
