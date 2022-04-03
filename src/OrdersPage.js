@@ -34,7 +34,11 @@ function OrdersPage() {
           </Button>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
-          <Link to="/">Back to Home</Link>
+          <Link to="/">
+            <Button className="buttonStyle" variant="secondary" size="sm">
+              Back to Home
+            </Button>
+          </Link>
         </div>
       </header>
     </div>
