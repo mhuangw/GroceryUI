@@ -9,15 +9,18 @@ function DronesPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Link to="/StoresPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              Make Store
-            </Button>
-          </Link>
+          <Button className="buttonStyle" variant="secondary" size="lg">
+            Make Drone
+          </Button>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Stores
+            Display Drones
+          </Button>
+        </div>
+        <div>
+          <Button className="buttonStyle" variant="secondary" size="lg">
+            Fly Drone
           </Button>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
