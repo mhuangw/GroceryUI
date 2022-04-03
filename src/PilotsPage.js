@@ -9,15 +9,13 @@ function PilotsPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Link to="/StoresPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              Make Store
-            </Button>
-          </Link>
+          <Button className="buttonStyle" variant="secondary" size="lg">
+            Make Pilot
+          </Button>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Stores
+            Display Pilots
           </Button>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
