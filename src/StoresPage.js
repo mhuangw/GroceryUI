@@ -2,12 +2,6 @@ import "./App.css";
 import React from "react";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BiStore } from "react-icons/bi";
-import { MdOutlineInventory2, MdOutlineAttachMoney } from "react-icons/md";
-import { IoIosAirplane } from "react-icons/io";
-import { GiDeliveryDrone } from "react-icons/gi";
-import { BsFillPersonFill } from "react-icons/bs";
-import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 function StoresPage() {
