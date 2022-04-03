@@ -9,15 +9,13 @@ function CustomersPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Link to="/StoresPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              Make Store
-            </Button>
-          </Link>
+          <Button className="buttonStyle" variant="secondary" size="lg">
+            Make Customer
+          </Button>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Stores
+            Display Customers
           </Button>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
