@@ -5,6 +5,11 @@ import reportWebVitals from "./reportWebVitals";
 import StoresPage from "./StoresPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
+import ItemsPage from "./ItemsPage";
+import PilotsPage from "./PilotsPage";
+import DronesPage from "./DronesPage";
+import CustomersPage from "./CustomersPage";
+import OrdersPage from "./OrdersPage";
 
 export default function App() {
   return (
@@ -12,6 +17,11 @@ export default function App() {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/StoresPage" element={<StoresPage />} />
+        <Route path="/ItemsPage" element={<ItemsPage />} />
+        <Route path="/PilotsPage" element={<PilotsPage />} />
+        <Route path="/DronesPage" element={<DronesPage />} />
+        <Route path="/CustomersPage" element={<CustomersPage />} />
+        <Route path="/OrdersPage" element={<OrdersPage />} />
       </Routes>
     </BrowserRouter>
   );

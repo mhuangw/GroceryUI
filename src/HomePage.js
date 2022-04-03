@@ -26,29 +26,39 @@ const HomePage = () => {
           </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            <MdOutlineInventory2 /> Items
-          </Button>
+          <Link to="/ItemsPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              <MdOutlineInventory2 /> Items
+            </Button>
+          </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            <IoIosAirplane /> Pilots
-          </Button>
+          <Link to="/PilotsPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              <IoIosAirplane /> Pilots
+            </Button>
+          </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            <GiDeliveryDrone /> Drones
-          </Button>
+          <Link to="/DronesPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              <GiDeliveryDrone /> Drones
+            </Button>
+          </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            <BsFillPersonFill /> Customers
-          </Button>
+          <Link to="/CustomersPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              <BsFillPersonFill /> Customers
+            </Button>
+          </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            <MdOutlineAttachMoney /> Orders
-          </Button>
+          <Link to="/OrdersPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              <MdOutlineAttachMoney /> Orders
+            </Button>
+          </Link>
         </div>
         <hr />
         <div style={{ fontSize: "medium" }}>
