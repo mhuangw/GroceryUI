@@ -11,13 +11,13 @@ function ItemsPage() {
         <div>
           <Link to="/StoresPage">
             <Button className="buttonStyle" variant="secondary" size="lg">
-              Make Store
+              Sell Item
             </Button>
           </Link>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Stores
+            Display Items
           </Button>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
