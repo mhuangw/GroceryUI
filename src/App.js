@@ -45,6 +45,12 @@ function App() {
             <MdOutlineAttachMoney /> Orders
           </Button>
         </div>
+        <hr />
+        <div style={{ fontSize: "medium" }}>
+          Built by CS6310 Spring 2022 Group 14
+          <br />
+          Felice A. Ferri, Mark Luka, Michael Huang, Noah Ellis, Sujith Mohan
+        </div>
       </header>
     </div>
   );
