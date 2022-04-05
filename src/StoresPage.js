@@ -9,7 +9,7 @@ function StoresPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Link to="/StoresPage">
+          <Link to="/MakeStorePage">
             <Button className="buttonStyle" variant="secondary" size="lg">
               Make Store
             </Button>
