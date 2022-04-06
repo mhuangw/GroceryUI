@@ -9,9 +9,11 @@ function OrdersPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Start Order
-          </Button>
+          <Link to="/StartOrderPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Start Order
+            </Button>
+          </Link>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
@@ -19,14 +21,18 @@ function OrdersPage() {
           </Button>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Request Item
-          </Button>
+          <Link to="/RequestItemPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Request Item
+            </Button>
+          </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Purchase Order
-          </Button>
+          <Link to="/PurchaseOrderPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Purchase Order
+            </Button>
+          </Link>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
