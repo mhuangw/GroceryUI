@@ -11,6 +11,7 @@ import DronesPage from "./DronesPage";
 import CustomersPage from "./CustomersPage";
 import OrdersPage from "./OrdersPage";
 import MakeStorePage from "./MakeStorePage";
+import SellItemPage from "./SellItemPage";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/CustomersPage" element={<CustomersPage />} />
         <Route path="/OrdersPage" element={<OrdersPage />} />
         <Route path="/MakeStorePage" element={<MakeStorePage />} />
+        <Route path="/SellItemPage" element={<SellItemPage />} />
       </Routes>
     </BrowserRouter>
   );

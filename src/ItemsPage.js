@@ -9,9 +9,11 @@ function ItemsPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Sell Item
-          </Button>
+          <Link to="/SellItemPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Sell Item
+            </Button>
+          </Link>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
