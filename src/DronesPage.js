@@ -9,9 +9,11 @@ function DronesPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Make Drone
-          </Button>
+          <Link to="/MakeDronePage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Make Drone
+            </Button>
+          </Link>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
@@ -19,9 +21,11 @@ function DronesPage() {
           </Button>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Fly Drone
-          </Button>
+          <Link to="/FlyDronePage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Fly Drone
+            </Button>
+          </Link>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
           <Link to="/">
