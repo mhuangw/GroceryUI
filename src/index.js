@@ -17,6 +17,7 @@ import MakeDronePage from "./MakeDronePage";
 import FlyDronePage from "./FlyDronePage";
 import MakeCustomerPage from "./MakeCustomerPage";
 import StartOrderPage from "./StartOrderPage";
+import RequestItemPage from "./RequestItemPage";
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
         <Route path="/FlyDronePage" element={<FlyDronePage />} />
         <Route path="/MakeCustomerPage" element={<MakeCustomerPage />} />
         <Route path="/StartOrderPage" element={<StartOrderPage />} />
+        <Route path="/RequestItemPage" element={<RequestItemPage />} />
       </Routes>
     </BrowserRouter>
   );
