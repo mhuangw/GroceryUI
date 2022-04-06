@@ -13,6 +13,10 @@ import OrdersPage from "./OrdersPage";
 import MakeStorePage from "./MakeStorePage";
 import SellItemPage from "./SellItemPage";
 import MakePilotPage from "./MakePilotPage";
+import MakeDronePage from "./MakeDronePage";
+import FlyDronePage from "./FlyDronePage";
+import MakeCustomerPage from "./MakeCustomerPage";
+import StartOrderPage from "./StartOrderPage";
 
 export default function App() {
   return (
@@ -28,6 +32,10 @@ export default function App() {
         <Route path="/MakeStorePage" element={<MakeStorePage />} />
         <Route path="/SellItemPage" element={<SellItemPage />} />
         <Route path="/MakePilotPage" element={<MakePilotPage />} />
+        <Route path="/MakeDronePage" element={<MakeDronePage />} />
+        <Route path="/FlyDronePage" element={<FlyDronePage />} />
+        <Route path="/MakeCustomerPage" element={<MakeCustomerPage />} />
+        <Route path="/StartOrderPage" element={<StartOrderPage />} />
       </Routes>
     </BrowserRouter>
   );

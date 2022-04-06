@@ -9,9 +9,11 @@ function CustomersPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Make Customer
-          </Button>
+          <Link to="/MakeCustomerPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Make Customer
+            </Button>
+          </Link>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">
