@@ -9,9 +9,11 @@ function PilotsPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Make Pilot
-          </Button>
+          <Link to="/MakePilotPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Make Pilot
+            </Button>
+          </Link>
         </div>
         <div>
           <Button className="buttonStyle" variant="secondary" size="lg">

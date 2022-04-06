@@ -12,6 +12,7 @@ import CustomersPage from "./CustomersPage";
 import OrdersPage from "./OrdersPage";
 import MakeStorePage from "./MakeStorePage";
 import SellItemPage from "./SellItemPage";
+import MakePilotPage from "./MakePilotPage";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/OrdersPage" element={<OrdersPage />} />
         <Route path="/MakeStorePage" element={<MakeStorePage />} />
         <Route path="/SellItemPage" element={<SellItemPage />} />
+        <Route path="/MakePilotPage" element={<MakePilotPage />} />
       </Routes>
     </BrowserRouter>
   );
