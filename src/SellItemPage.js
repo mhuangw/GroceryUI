@@ -20,7 +20,7 @@ function SellItemPage() {
               Submit
             </Button>
             <div style={{ marginTop: "20px" }}>
-              <Link to="/StoresPage">
+              <Link to="/ItemsPage">
                 <Button className="buttonStyle" variant="secondary" size="sm">
                   Go Back
                 </Button>

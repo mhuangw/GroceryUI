@@ -32,7 +32,7 @@ function MakePilotPage() {
               Submit
             </Button>
             <div style={{ marginTop: "20px" }}>
-              <Link to="/StoresPage">
+              <Link to="/PilotsPage">
                 <Button className="buttonStyle" variant="secondary" size="sm">
                   Go Back
                 </Button>

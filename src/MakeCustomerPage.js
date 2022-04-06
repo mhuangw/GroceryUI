@@ -29,7 +29,7 @@ function MakeCustomerPage() {
               Submit
             </Button>
             <div style={{ marginTop: "20px" }}>
-              <Link to="/StoresPage">
+              <Link to="/CustomersPage">
                 <Button className="buttonStyle" variant="secondary" size="sm">
                   Go Back
                 </Button>

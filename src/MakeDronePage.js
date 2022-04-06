@@ -23,7 +23,7 @@ function MakeDronePage() {
               Submit
             </Button>
             <div style={{ marginTop: "20px" }}>
-              <Link to="/StoresPage">
+              <Link to="/DronesPage">
                 <Button className="buttonStyle" variant="secondary" size="sm">
                   Go Back
                 </Button>

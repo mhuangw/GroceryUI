@@ -23,7 +23,7 @@ function StartOrderPage() {
               Submit
             </Button>
             <div style={{ marginTop: "20px" }}>
-              <Link to="/">
+              <Link to="/OrdersPage">
                 <Button className="buttonStyle" variant="secondary" size="sm">
                   Go Back
                 </Button>
