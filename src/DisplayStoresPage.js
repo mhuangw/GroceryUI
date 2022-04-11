@@ -24,30 +24,26 @@ function DisplayStoresPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          {stores.length > 0 ? (
-            <div>
-              <Table bordered style={{ color: "white" }}>
-                <thead>
-                  <tr>
-                    <th>Store Name</th>
-                    <th>Store Revenue</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {stores.map((store) => {
-                    return (
-                      <tr>
-                        <td style={{ color: "white" }}>{store.name} </td>
-                        <td style={{ color: "white" }}>{store.totalRevenue}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </Table>
-            </div>
-          ) : (
-            <div>No stores found</div>
-          )}
+          <div>
+            <Table bordered style={{ color: "white" }}>
+              <thead>
+                <tr>
+                  <th>Store Name</th>
+                  <th>Store Revenue</th>
+                </tr>
+              </thead>
+              <tbody>
+                {stores.map((store) => {
+                  return (
+                    <tr>
+                      <td style={{ color: "white" }}>{store.name} </td>
+                      <td style={{ color: "white" }}>{store.totalRevenue}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </Table>
+          </div>
         </div>
         <div style={{ marginTop: "20px" }}>
           <Link to="/StoresPage">
