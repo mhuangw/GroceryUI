@@ -8,13 +8,16 @@ function DisplayStoresPage() {
 
   const url = "https://cs6310-14.azurewebsites.net/store/display_stores";
 
-  useEffect(async () => {
-    await axios
-      .get(url)
-      .then((response) => {
-        setStores(response.data);
-      })
-      .catch((error) => console.error(error));
+  useEffect(() => {
+    async function fetchData() {
+      await axios
+        .get(url)
+        .then((response) => {
+          setStores(response.data);
+        })
+        .catch((error) => console.error(error));
+    }
+    fetchData();
   }, []);
 
   return (
