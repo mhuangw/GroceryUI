@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 function DisplayStoresPage() {
   const [stores, setStores] = useState([]);
 
+  const [error, setError] = useState("");
+
   const url = "https://cs6310-14.azurewebsites.net/store/display_stores";
 
   useEffect(() => {
@@ -15,7 +17,7 @@ function DisplayStoresPage() {
         .then((response) => {
           setStores(response.data);
         })
-        .catch((error) => console.error(error));
+        .catch((error) => setError(error));
     }
     fetchData();
   }, []);
@@ -24,7 +26,7 @@ function DisplayStoresPage() {
     <div className="App">
       <header className="App-header">
         <div>
-          <div>
+          {stores.length > 0 ? (
             <Table bordered style={{ color: "white" }}>
               <thead>
                 <tr>
@@ -43,7 +45,9 @@ function DisplayStoresPage() {
                 })}
               </tbody>
             </Table>
-          </div>
+          ) : (
+            <p>{error}</p>
+          )}
         </div>
         <div style={{ marginTop: "20px" }}>
           <Link to="/StoresPage">
