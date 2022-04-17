@@ -3,12 +3,10 @@ import { useEffect, useState } from "react";
 import { Table, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+const url = "https://cs6310-14.azurewebsites.net/store/display_stores";
+
 function DisplayStoresPage() {
   const [stores, setStores] = useState([]);
-
-  const [error, setError] = useState("");
-
-  const url = "https://cs6310-14.azurewebsites.net/store/display_stores";
 
   useEffect(() => {
     async function fetchData() {
@@ -17,7 +15,9 @@ function DisplayStoresPage() {
         .then((response) => {
           setStores(response.data);
         })
-        .catch((error) => setError(error));
+        .catch((error) => {
+          alert(error.response.data.message);
+        });
     }
     fetchData();
   }, []);
@@ -46,7 +46,7 @@ function DisplayStoresPage() {
               </tbody>
             </Table>
           ) : (
-            <p>{error}</p>
+            <p>No stores found</p>
           )}
         </div>
         <div style={{ marginTop: "20px" }}>
