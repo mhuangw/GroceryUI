@@ -44,7 +44,7 @@ function DisplayOrdersPage() {
               </Button>
             </Form>
             <br />
-            <Link to="/ItemsPage">
+            <Link to="/OrdersPage">
               <Button className="buttonStyle" variant="secondary" size="sm">
                 Go Back
               </Button>
