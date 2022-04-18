@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Table, Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const url = "https://cs6310-14.azurewebsites.net/pilot/display_drones";
+const url = "https://cs6310-14.azurewebsites.net/drone/display_drones";
 
 function DisplayDronesPage() {
   const [storeName, setStoreName] = useState("");
