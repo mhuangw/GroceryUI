@@ -16,9 +16,11 @@ function DronesPage() {
           </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Drones
-          </Button>
+          <Link to="/DisplayDronesPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Display Drones
+            </Button>
+          </Link>
         </div>
         <div>
           <Link to="/FlyDronePage">

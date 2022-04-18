@@ -17,6 +17,7 @@ import DisplayItemsPage from "./DisplayItemsPage";
 import MakePilotPage from "./MakePilotPage";
 import DisplayPilotsPage from "./DisplayPilotsPage";
 import MakeDronePage from "./MakeDronePage";
+import DisplayDronesPage from "./DisplayDronesPage";
 import FlyDronePage from "./FlyDronePage";
 import MakeCustomerPage from "./MakeCustomerPage";
 import StartOrderPage from "./StartOrderPage";
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/MakePilotPage" element={<MakePilotPage />} />
         <Route path="/DisplayPilotsPage" element={<DisplayPilotsPage />} />
         <Route path="/MakeDronePage" element={<MakeDronePage />} />
+        <Route path="/DisplayDronesPage" element={<DisplayDronesPage />} />
         <Route path="/FlyDronePage" element={<FlyDronePage />} />
         <Route path="/MakeCustomerPage" element={<MakeCustomerPage />} />
         <Route path="/StartOrderPage" element={<StartOrderPage />} />
