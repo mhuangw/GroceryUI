@@ -25,6 +25,7 @@ import StartOrderPage from "./StartOrderPage";
 import DisplayOrdersPage from "./DisplayOrdersPage";
 import RequestItemPage from "./RequestItemPage";
 import PurchaseOrderPage from "./PurchaseOrderPage";
+import CancelOrderPage from "./CancelOrderPage";
 
 export default function App() {
   return (
@@ -55,6 +56,7 @@ export default function App() {
         <Route path="/DisplayOrdersPage" element={<DisplayOrdersPage />} />
         <Route path="/RequestItemPage" element={<RequestItemPage />} />
         <Route path="/PurchaseOrderPage" element={<PurchaseOrderPage />} />
+        <Route path="/CancelOrderPage" element={<CancelOrderPage />} />
       </Routes>
     </BrowserRouter>
   );

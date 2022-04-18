@@ -37,9 +37,11 @@ function OrdersPage() {
           </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Cancel Order
-          </Button>
+          <Link to="/CancelOrderPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Cancel Order
+            </Button>
+          </Link>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
           <Link to="/">
