@@ -30,7 +30,7 @@ function DronesPage() {
           </Link>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
-          <Link to="/">
+          <Link to="/HomePage">
             <Button className="buttonStyle" variant="secondary" size="sm">
               Back to Home
             </Button>
