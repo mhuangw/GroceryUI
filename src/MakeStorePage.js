@@ -30,16 +30,14 @@ function MakeStorePage() {
         <div>
           <Form>
             <Form.Group className="mb-3" controlId="storeName">
-              <Form.Label>Store Name</Form.Label>
               <Form.Control
-                placeholder="Enter name"
+                placeholder="Store Name"
                 onChange={(e) => setStoreName(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlid="storeRevenue">
-              <Form.Label>Initial Revenue</Form.Label>
               <Form.Control
-                placeholder="Enter amount"
+                placeholder="Initial Revenue"
                 onChange={(e) => setStoreRevenue(e.target.value)}
               />
             </Form.Group>
