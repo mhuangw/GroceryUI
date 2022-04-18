@@ -50,7 +50,7 @@ function CreateAccountPage() {
             </Button>
           </Form>
           <br />
-          <Link to="/">
+          <Link to="/HomePage">
             <Button variant="secondary">Go Back</Button>
           </Link>
         </div>
