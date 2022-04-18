@@ -27,12 +27,14 @@ import RequestItemPage from "./RequestItemPage";
 import PurchaseOrderPage from "./PurchaseOrderPage";
 import CancelOrderPage from "./CancelOrderPage";
 import LoginPage from "./LoginPage";
+import CreateAccountPage from "./CreateAccountPage";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<LoginPage />} />
+        <Route path="/CreateAccountPage" element={<CreateAccountPage />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/StoresPage" element={<StoresPage />} />
         <Route path="/ItemsPage" element={<ItemsPage />} />
