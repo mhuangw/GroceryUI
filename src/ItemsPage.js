@@ -16,9 +16,11 @@ function ItemsPage() {
           </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Items
-          </Button>
+          <Link to="/DisplayItemsPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Display Items
+            </Button>
+          </Link>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
           <Link to="/">

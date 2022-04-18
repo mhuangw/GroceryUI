@@ -13,6 +13,7 @@ import OrdersPage from "./OrdersPage";
 import MakeStorePage from "./MakeStorePage";
 import DisplayStoresPage from "./DisplayStoresPage";
 import SellItemPage from "./SellItemPage";
+import DisplayItemsPage from "./DisplayItemsPage";
 import MakePilotPage from "./MakePilotPage";
 import MakeDronePage from "./MakeDronePage";
 import FlyDronePage from "./FlyDronePage";
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/MakeStorePage" element={<MakeStorePage />} />
         <Route path="/DisplayStoresPage" element={<DisplayStoresPage />} />
         <Route path="/SellItemPage" element={<SellItemPage />} />
+        <Route path="/DisplayItemsPage" element={<DisplayItemsPage />} />
         <Route path="/MakePilotPage" element={<MakePilotPage />} />
         <Route path="/MakeDronePage" element={<MakeDronePage />} />
         <Route path="/FlyDronePage" element={<FlyDronePage />} />
