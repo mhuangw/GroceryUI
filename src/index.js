@@ -22,6 +22,7 @@ import FlyDronePage from "./FlyDronePage";
 import MakeCustomerPage from "./MakeCustomerPage";
 import DisplayCustomersPage from "./DisplayCustomersPage";
 import StartOrderPage from "./StartOrderPage";
+import DisplayOrdersPage from "./DisplayOrdersPage";
 import RequestItemPage from "./RequestItemPage";
 import PurchaseOrderPage from "./PurchaseOrderPage";
 
@@ -51,6 +52,7 @@ export default function App() {
           element={<DisplayCustomersPage />}
         />
         <Route path="/StartOrderPage" element={<StartOrderPage />} />
+        <Route path="/DisplayOrdersPage" element={<DisplayOrdersPage />} />
         <Route path="/RequestItemPage" element={<RequestItemPage />} />
         <Route path="/PurchaseOrderPage" element={<PurchaseOrderPage />} />
       </Routes>

@@ -16,9 +16,11 @@ function OrdersPage() {
           </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Orders
-          </Button>
+          <Link to="/DisplayOrdersPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Display Orders
+            </Button>
+          </Link>
         </div>
         <div>
           <Link to="/RequestItemPage">
