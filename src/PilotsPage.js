@@ -16,9 +16,11 @@ function PilotsPage() {
           </Link>
         </div>
         <div>
-          <Button className="buttonStyle" variant="secondary" size="lg">
-            Display Pilots
-          </Button>
+          <Link to="/DisplayPilotsPage">
+            <Button className="buttonStyle" variant="secondary" size="lg">
+              Display Pilots
+            </Button>
+          </Link>
         </div>
         <div style={{ marginTop: "20px", fontSize: "large" }}>
           <Link to="/">
