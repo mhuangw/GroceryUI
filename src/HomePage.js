@@ -60,6 +60,13 @@ const HomePage = () => {
             </Button>
           </Link>
         </div>
+        <div style={{ marginTop: "20px", fontSize: "large" }}>
+          <Link to="/">
+            <Button className="buttonStyle" variant="secondary" size="sm">
+              Log Out
+            </Button>
+          </Link>
+        </div>
         <hr />
         <div style={{ fontSize: "medium" }}>
           Built by CS6310 Spring 2022 Group 14

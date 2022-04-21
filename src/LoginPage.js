@@ -41,7 +41,7 @@ function LoginPage() {
             </Form.Group>
 
             <Button variant="secondary" onClick={() => handleLogin()}>
-              Submit
+              Log In
             </Button>
           </Form>
         </div>
