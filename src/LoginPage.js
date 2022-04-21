@@ -1,7 +1,7 @@
 import { Form, Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 import { useState } from "react";
-import { useAuth } from "./AuthProvider";
 
 const url = "https://cs6310-14.azurewebsites.net/Authentication/login";
 
@@ -11,12 +11,22 @@ function LoginPage() {
 
   const navigate = useNavigate();
 
-  const { login } = useAuth();
+  const login = () => {
+    if (account === "" || password === "") {
+      alert("Please make sure all fields are filled in");
+      return;
+    }
 
-  const handleLogin = () => {
-    login(account, password).then(() => {
-      navigate("/HomePage");
-    });
+    axios
+      .get(url + "/" + account + "/" + password)
+      .then((response) => {
+        localStorage.setItem("isAuthenticated", "true");
+        // privilege : 'role'
+        navigate("/HomePage");
+      })
+      .catch((error) => {
+        alert(error.response.data.message);
+      });
   };
 
   return (
@@ -40,8 +50,8 @@ function LoginPage() {
               />
             </Form.Group>
 
-            <Button variant="secondary" onClick={() => handleLogin()}>
-              Log In
+            <Button variant="secondary" onClick={() => login()}>
+              Submit
             </Button>
           </Form>
         </div>
