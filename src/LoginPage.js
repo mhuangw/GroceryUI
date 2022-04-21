@@ -1,5 +1,5 @@
 import { Form, Button } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
@@ -21,7 +21,8 @@ function LoginPage() {
       .get(url + "/" + account + "/" + password)
       .then((response) => {
         localStorage.setItem("isAuthenticated", "true");
-        // privilege : 'role'
+        localStorage.setItem("account", response.data.account);
+        localStorage.setItem("privilege", response.data.privilege);
         navigate("/HomePage");
       })
       .catch((error) => {
