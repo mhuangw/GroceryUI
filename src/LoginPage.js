@@ -1,7 +1,7 @@
 import { Form, Button } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useAuth } from "./AuthProvider";
 
 const url = "https://cs6310-14.azurewebsites.net/Authentication/login";
 
@@ -11,15 +11,12 @@ function LoginPage() {
 
   const navigate = useNavigate();
 
-  const login = () => {
-    axios
-      .get(url + "/" + account + "/" + password)
-      .then((response) => {
-        navigate("/HomePage");
-      })
-      .catch((error) => {
-        alert(error.response.data.message);
-      });
+  const { login } = useAuth();
+
+  const handleLogin = () => {
+    login(account, password).then(() => {
+      navigate("/HomePage");
+    });
   };
 
   return (
@@ -43,7 +40,7 @@ function LoginPage() {
               />
             </Form.Group>
 
-            <Button variant="secondary" onClick={() => login()}>
+            <Button variant="secondary" onClick={() => handleLogin()}>
               Submit
             </Button>
           </Form>
