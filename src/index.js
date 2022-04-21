@@ -27,15 +27,16 @@ import RequestItemPage from "./RequestItemPage";
 import PurchaseOrderPage from "./PurchaseOrderPage";
 import CancelOrderPage from "./CancelOrderPage";
 import LoginPage from "./LoginPage";
-import CreateAccountPage from "./CreateAccountPage";
+import ProtectedRoute from "./ProtectedRoute";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<LoginPage />} />
-        <Route path="/CreateAccountPage" element={<CreateAccountPage />} />
-        <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/HomePage" element={<ProtectedRoute />}>
+          <Route path="/HomePage" element={<HomePage />} />
+        </Route>
         <Route path="/StoresPage" element={<StoresPage />} />
         <Route path="/ItemsPage" element={<ItemsPage />} />
         <Route path="/PilotsPage" element={<PilotsPage />} />
