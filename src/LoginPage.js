@@ -50,10 +50,6 @@ function LoginPage() {
               Submit
             </Button>
           </Form>
-          <br />
-          <Link to="/CreateAccountPage">
-            <Button variant="secondary">Create Account</Button>
-          </Link>
         </div>
       </header>
     </div>
