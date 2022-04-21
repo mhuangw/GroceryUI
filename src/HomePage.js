@@ -8,9 +8,17 @@ import { IoIosAirplane } from "react-icons/io";
 import { GiDeliveryDrone } from "react-icons/gi";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdOutlineLocalGroceryStore } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const isAuthenticated = localStorage.getItem("isAuthenticated");
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.clear();
+    navigate("/");
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -60,13 +68,22 @@ const HomePage = () => {
             </Button>
           </Link>
         </div>
-        <div style={{ marginTop: "20px", fontSize: "large" }}>
-          <Link to="/">
-            <Button className="buttonStyle" variant="secondary" size="sm">
-              Log Out
-            </Button>
-          </Link>
-        </div>
+        {isAuthenticated && (
+          <>
+            <div style={{ marginTop: "20px", fontSize: "large" }}>
+              <Link to="/">
+                <Button
+                  className="buttonStyle"
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => handleLogout()}
+                >
+                  Log Out
+                </Button>
+              </Link>
+            </div>
+          </>
+        )}
         <hr />
         <div style={{ fontSize: "medium" }}>
           Built by CS6310 Spring 2022 Group 14
