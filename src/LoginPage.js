@@ -1,5 +1,5 @@
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
@@ -7,19 +7,15 @@ const url = "https://cs6310-14.azurewebsites.net/Authentication/login";
 
 function LoginPage() {
   const [account, setAccount] = useState("");
-  const [privilege, setPrivilege] = useState(0);
   const [password, setPassword] = useState("");
-  const [salt, setSalt] = useState("");
-  const [auth, setAuth] = useState(true);
+
+  const navigate = useNavigate();
 
   const login = () => {
     axios
-      .post(url, {
-        account: account,
-        privilege: privilege,
-        password: password,
-        salt: salt,
-        auth: auth,
+      .get(url + "/" + account + "/" + password)
+      .then((response) => {
+        navigate("/HomePage");
       })
       .catch((error) => {
         alert(error.response.data.message);
@@ -41,6 +37,7 @@ function LoginPage() {
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Control
+                type="password"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
               />
