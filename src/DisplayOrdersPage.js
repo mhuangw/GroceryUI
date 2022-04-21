@@ -79,7 +79,17 @@ function DisplayOrdersPage() {
                             {order.order.customerAccount}
                           </td>
                           <td style={{ color: "white" }}>
-                            {order.orderItems.map((item) => item.name + " ")}
+                            {order.orderItems.map(
+                              (item) =>
+                                "item name: " +
+                                item.name +
+                                ", total quantity: " +
+                                item.quantity +
+                                ", total cost: " +
+                                item.totalCost +
+                                ", total weight: " +
+                                item.totalWeight
+                            )}
                           </td>
                         </tr>
                       );
