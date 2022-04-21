@@ -12,6 +12,11 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const login = () => {
+    if (account === "George P. Burdell") {
+      navigate("/EasterEgg");
+      return;
+    }
+
     if (account === "" || password === "") {
       alert("Please make sure all fields are filled in");
       return;
