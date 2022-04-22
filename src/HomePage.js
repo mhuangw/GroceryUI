@@ -12,6 +12,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const isAuthenticated = localStorage.getItem("isAuthenticated");
+  const isAdmin = localStorage.getItem("privilege") === "Admin";
+
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -24,42 +26,46 @@ const HomePage = () => {
       <header className="App-header">
         <p>Welcome, {localStorage.getItem("account")}!</p>
         <p>Select a category to get started: </p>
+        {isAdmin && (
+          <>
+            <div>
+              <Link to="/StoresPage">
+                <Button className="buttonStyle" variant="secondary" size="lg">
+                  <BiStore /> Stores
+                </Button>
+              </Link>
+            </div>
 
-        <div>
-          <Link to="/StoresPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              <BiStore /> Stores
-            </Button>
-          </Link>
-        </div>
-        <div>
-          <Link to="/ItemsPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              <MdOutlineInventory2 /> Items
-            </Button>
-          </Link>
-        </div>
-        <div>
-          <Link to="/PilotsPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              <IoIosAirplane /> Pilots
-            </Button>
-          </Link>
-        </div>
-        <div>
-          <Link to="/DronesPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              <GiDeliveryDrone /> Drones
-            </Button>
-          </Link>
-        </div>
-        <div>
-          <Link to="/CustomersPage">
-            <Button className="buttonStyle" variant="secondary" size="lg">
-              <BsFillPersonFill /> Customers
-            </Button>
-          </Link>
-        </div>
+            <div>
+              <Link to="/ItemsPage">
+                <Button className="buttonStyle" variant="secondary" size="lg">
+                  <MdOutlineInventory2 /> Items
+                </Button>
+              </Link>
+            </div>
+            <div>
+              <Link to="/PilotsPage">
+                <Button className="buttonStyle" variant="secondary" size="lg">
+                  <IoIosAirplane /> Pilots
+                </Button>
+              </Link>
+            </div>
+            <div>
+              <Link to="/DronesPage">
+                <Button className="buttonStyle" variant="secondary" size="lg">
+                  <GiDeliveryDrone /> Drones
+                </Button>
+              </Link>
+            </div>
+            <div>
+              <Link to="/CustomersPage">
+                <Button className="buttonStyle" variant="secondary" size="lg">
+                  <BsFillPersonFill /> Customers
+                </Button>
+              </Link>
+            </div>
+          </>
+        )}
         <div>
           <Link to="/OrdersPage">
             <Button className="buttonStyle" variant="secondary" size="lg">
