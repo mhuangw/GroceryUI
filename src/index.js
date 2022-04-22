@@ -28,6 +28,7 @@ import PurchaseOrderPage from "./PurchaseOrderPage";
 import CancelOrderPage from "./CancelOrderPage";
 import LoginPage from "./LoginPage";
 import ProtectedRoute from "./ProtectedRoute";
+import ForbiddenPage from "./ForbiddenPage";
 import EasterEgg from "./EasterEgg";
 
 export default function App() {
@@ -63,6 +64,7 @@ export default function App() {
         <Route path="/RequestItemPage" element={<RequestItemPage />} />
         <Route path="/PurchaseOrderPage" element={<PurchaseOrderPage />} />
         <Route path="/CancelOrderPage" element={<CancelOrderPage />} />
+        <Route path="/ForbiddenPage" element={<ForbiddenPage />} />
         <Route path="/EasterEgg" element={<EasterEgg />} />
       </Routes>
     </BrowserRouter>
