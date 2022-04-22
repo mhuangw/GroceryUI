@@ -2,6 +2,7 @@ import { Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import { MdOutlineLocalGroceryStore } from "react-icons/md";
 
 const url = "https://cs6310-14.azurewebsites.net/Authentication/login";
 
@@ -38,6 +39,7 @@ function LoginPage() {
   return (
     <div className="App">
       <header className="App-header">
+        <MdOutlineLocalGroceryStore size={100} />
         <p>Welcome to the Grocery Express Delivery Service!</p>
         <p>Enter your credentials to begin: </p>
         <div>
