@@ -28,6 +28,7 @@ import PurchaseOrderPage from "./PurchaseOrderPage";
 import CancelOrderPage from "./CancelOrderPage";
 import LoginPage from "./LoginPage";
 import ProtectedRoute from "./ProtectedRoute";
+import AdminRoute from "./AdminRoute";
 import ForbiddenPage from "./ForbiddenPage";
 import EasterEgg from "./EasterEgg";
 
@@ -39,26 +40,70 @@ export default function App() {
         <Route path="/HomePage" element={<ProtectedRoute />}>
           <Route path="/HomePage" element={<HomePage />} />
         </Route>
-        <Route path="/StoresPage" element={<StoresPage />} />
-        <Route path="/ItemsPage" element={<ItemsPage />} />
-        <Route path="/PilotsPage" element={<PilotsPage />} />
-        <Route path="/DronesPage" element={<DronesPage />} />
-        <Route path="/CustomersPage" element={<CustomersPage />} />
+        <Route path="/StoresPage" element={<AdminRoute />}>
+          <Route path="/StoresPage" element={<StoresPage />} />
+        </Route>
+        <Route path="/ItemsPage" element={<AdminRoute />}>
+          <Route path="/ItemsPage" element={<ItemsPage />} />
+        </Route>
+        <Route path="/PilotsPage" element={<AdminRoute />}>
+          <Route path="/PilotsPage" element={<PilotsPage />} />
+        </Route>
+        <Route path="/DronesPage" element={<AdminRoute />}>
+          <Route path="/DronesPage" element={<DronesPage />} />
+        </Route>
+        <Route path="/CustomersPage" element={<AdminRoute />}>
+          <Route path="/CustomersPage" element={<CustomersPage />} />
+        </Route>
         <Route path="/OrdersPage" element={<OrdersPage />} />
-        <Route path="/MakeStorePage" element={<MakeStorePage />} />
-        <Route path="/DisplayStoresPage" element={<DisplayStoresPage />} />
-        <Route path="/SellItemPage" element={<SellItemPage />} />
-        <Route path="/DisplayItemsPage" element={<DisplayItemsPage />} />
-        <Route path="/MakePilotPage" element={<MakePilotPage />} />
-        <Route path="/DisplayPilotsPage" element={<DisplayPilotsPage />} />
-        <Route path="/MakeDronePage" element={<MakeDronePage />} />
-        <Route path="/DisplayDronesPage" element={<DisplayDronesPage />} />
-        <Route path="/FlyDronePage" element={<FlyDronePage />} />
-        <Route path="/MakeCustomerPage" element={<MakeCustomerPage />} />
-        <Route
-          path="/DisplayCustomersPage"
-          element={<DisplayCustomersPage />}
-        />
+
+        <Route path="/MakeStorePage" element={<AdminRoute />}>
+          <Route path="/MakeStorePage" element={<MakeStorePage />} />
+        </Route>
+
+        <Route path="/DisplayStoresPage" element={<AdminRoute />}>
+          <Route path="/DisplayStoresPage" element={<DisplayStoresPage />} />
+        </Route>
+
+        <Route path="/SellItemPage" element={<AdminRoute />}>
+          <Route path="/SellItemPage" element={<SellItemPage />} />
+        </Route>
+
+        <Route path="/DisplayItemsPage" element={<AdminRoute />}>
+          <Route path="/DisplayItemsPage" element={<DisplayItemsPage />} />
+        </Route>
+
+        <Route path="/MakePilotPage" element={<AdminRoute />}>
+          <Route path="/MakePilotPage" element={<MakePilotPage />} />
+        </Route>
+
+        <Route path="/DisplayPilotsPage" element={<AdminRoute />}>
+          <Route path="/DisplayPilotsPage" element={<DisplayPilotsPage />} />
+        </Route>
+
+        <Route path="/MakeDronePage" element={<AdminRoute />}>
+          <Route path="/MakeDronePage" element={<MakeDronePage />} />
+        </Route>
+
+        <Route path="/DisplayDronesPage" element={<AdminRoute />}>
+          <Route path="/DisplayDronesPage" element={<DisplayDronesPage />} />
+        </Route>
+
+        <Route path="/FlyDronePage" element={<AdminRoute />}>
+          <Route path="/FlyDronePage" element={<FlyDronePage />} />
+        </Route>
+
+        <Route path="/MakeCustomerPage" element={<AdminRoute />}>
+          <Route path="/MakeCustomerPage" element={<MakeCustomerPage />} />
+        </Route>
+
+        <Route path="/DisplayCustomersPage" element={<AdminRoute />}>
+          <Route
+            path="/DisplayCustomersPage"
+            element={<DisplayCustomersPage />}
+          />
+        </Route>
+
         <Route path="/StartOrderPage" element={<StartOrderPage />} />
         <Route path="/DisplayOrdersPage" element={<DisplayOrdersPage />} />
         <Route path="/RequestItemPage" element={<RequestItemPage />} />
